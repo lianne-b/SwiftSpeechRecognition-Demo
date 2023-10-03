@@ -1,5 +1,5 @@
 //
-//  SpeechRecognition.swift
+//  RecordingRecognizer.swift
 //  STTDemo
 //
 //  Created by Ye Eun Choi on 2023/10/02.
@@ -18,7 +18,7 @@ func requestPermission(completion: @escaping (String) -> Void) {
                 forResource: "audioKOR",
                 ofType: "mp3"
             ) {
-                recognizeAudio(
+                recognizeRecording(
                     url: URL(fileURLWithPath: path),
                     completion: completion
                 )
@@ -30,9 +30,9 @@ func requestPermission(completion: @escaping (String) -> Void) {
 }
 
 
-// MARK: - Recognize Audio
+// MARK: - Recognize Recording
 /// 음성 인식을 위한 함수
-func recognizeAudio(url: URL, completion: @escaping (String) -> Void) {
+func recognizeRecording(url: URL, completion: @escaping (String) -> Void) {
     let recognizer = SFSpeechRecognizer()
     let request = SFSpeechURLRecognitionRequest(url: url)
     recognizer?.recognitionTask(with: request, resultHandler: { result, error in

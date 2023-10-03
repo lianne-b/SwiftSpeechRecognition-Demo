@@ -13,10 +13,11 @@
 		EF05F6D52ACA960A00FFDBCE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF05F6D42ACA960A00FFDBCE /* Preview Assets.xcassets */; };
 		EF05F6E12ACA9A0B00FFDBCE /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05F6E02ACA9A0B00FFDBCE /* Audio.swift */; };
 		EF05F6E32ACA9B4700FFDBCE /* InitiatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05F6E22ACA9B4700FFDBCE /* InitiatorView.swift */; };
-		EF05F6E52ACA9D2400FFDBCE /* SpeechRecognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05F6E42ACA9D2400FFDBCE /* SpeechRecognition.swift */; };
+		EF05F6E52ACA9D2400FFDBCE /* RecordingRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05F6E42ACA9D2400FFDBCE /* RecordingRecognizer.swift */; };
 		EF31E90E2ACAA62100889AAA /* audioKOR.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF31E90C2ACAA62100889AAA /* audioKOR.mp3 */; };
 		EF31E90F2ACAA62100889AAA /* audioENG.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EF31E90D2ACAA62100889AAA /* audioENG.mp3 */; };
 		EF31E9132ACAAC5F00889AAA /* LiveAudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF31E9122ACAAC5F00889AAA /* LiveAudioView.swift */; };
+		EF31E9182ACC02A500889AAA /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF31E9172ACC02A500889AAA /* SpeechRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +29,11 @@
 		EF05F6DB2ACA97B100FFDBCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EF05F6E02ACA9A0B00FFDBCE /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
 		EF05F6E22ACA9B4700FFDBCE /* InitiatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitiatorView.swift; sourceTree = "<group>"; };
-		EF05F6E42ACA9D2400FFDBCE /* SpeechRecognition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognition.swift; sourceTree = "<group>"; };
+		EF05F6E42ACA9D2400FFDBCE /* RecordingRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingRecognizer.swift; sourceTree = "<group>"; };
 		EF31E90C2ACAA62100889AAA /* audioKOR.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audioKOR.mp3; sourceTree = "<group>"; };
 		EF31E90D2ACAA62100889AAA /* audioENG.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audioENG.mp3; sourceTree = "<group>"; };
 		EF31E9122ACAAC5F00889AAA /* LiveAudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveAudioView.swift; sourceTree = "<group>"; };
+		EF31E9172ACC02A500889AAA /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +70,6 @@
 				EF05F6CD2ACA960900FFDBCE /* STTDemoApp.swift */,
 				EF31E9102ACAABD000889AAA /* RecordedAudioDemo */,
 				EF31E9112ACAABDF00889AAA /* LiveAudioDemo */,
-				EF05F6E42ACA9D2400FFDBCE /* SpeechRecognition.swift */,
 				EF05F6E22ACA9B4700FFDBCE /* InitiatorView.swift */,
 				EF31E90D2ACAA62100889AAA /* audioENG.mp3 */,
 				EF31E90C2ACAA62100889AAA /* audioKOR.mp3 */,
@@ -90,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				EF05F6CF2ACA960900FFDBCE /* RecordedAudioView.swift */,
+				EF05F6E42ACA9D2400FFDBCE /* RecordingRecognizer.swift */,
 				EF05F6E02ACA9A0B00FFDBCE /* Audio.swift */,
 			);
 			path = RecordedAudioDemo;
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				EF31E9122ACAAC5F00889AAA /* LiveAudioView.swift */,
+				EF31E9172ACC02A500889AAA /* SpeechRecognizer.swift */,
 			);
 			path = LiveAudioDemo;
 			sourceTree = "<group>";
@@ -175,11 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF31E9182ACC02A500889AAA /* SpeechRecognizer.swift in Sources */,
 				EF05F6E32ACA9B4700FFDBCE /* InitiatorView.swift in Sources */,
 				EF05F6E12ACA9A0B00FFDBCE /* Audio.swift in Sources */,
 				EF05F6D02ACA960900FFDBCE /* RecordedAudioView.swift in Sources */,
 				EF31E9132ACAAC5F00889AAA /* LiveAudioView.swift in Sources */,
-				EF05F6E52ACA9D2400FFDBCE /* SpeechRecognition.swift in Sources */,
+				EF05F6E52ACA9D2400FFDBCE /* RecordingRecognizer.swift in Sources */,
 				EF05F6CE2ACA960900FFDBCE /* STTDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"STTDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 34U36L8239;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = STTDemo/Info.plist;
@@ -340,6 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"STTDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = 34U36L8239;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = STTDemo/Info.plist;

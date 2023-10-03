@@ -11,7 +11,7 @@ import SwiftUI
 struct STTDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            RecordedAudioView()
+            LiveAudioView()
         }
     }
 }
